@@ -11,3 +11,12 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import 'select2/dist/css/select2.css'
+
+import { multipleSelect } from "../components/select"
+
+
+document.addEventListener('turbolinks:load', () => {
+  multipleSelect();
+});
